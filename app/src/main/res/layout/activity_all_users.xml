@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".All_users"
+    android:background="@color/white">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tital"
+        android:text="Registration Successful"
+        android:textColor="@color/black"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:textSize="29sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/armata"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/subtital"
+        android:text="Your details are submitted successfully"
+        android:textColor="@color/gray"
+        android:layout_below="@id/tital"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/armata"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/subtital"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="22dp">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+                <TextView
+                     android:text="Name"
+                    android:layout_width="60dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:background="@drawable/cell_bg"
+                    android:gravity="center"/>
+                <TextView
+                    android:text="Birthday"
+                    android:layout_width="60dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:background="@drawable/cell_bg"
+                    android:gravity="center"/>
+                <TextView
+                    android:text="Email"
+                    android:layout_width="70dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:background="@drawable/cell_bg"
+                    android:gravity="center"/>
+            </TableRow>
+        </TableLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerview"
+        android:isScrollContainer="false"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp" />
+    </LinearLayout>
+
+</RelativeLayout>
